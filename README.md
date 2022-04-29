@@ -540,15 +540,15 @@ an `else` in that it will run unless the engine hits a `break` in one of the
 #### `break`
 
 In the previous example, `break` is used to stop the `switch` statement from
-continuing to look at case statements once it finds a match. If we left out the
-`break` keyword, the switch statement would get to a match at `case 15` and
-continue on through to `case 19`, setting `isTeenager` to true. However, since
-we didn't break after that assignment, the code would continue to execute and
-`isTeenager` would wind up being reset to false. To keep that from happening, we
-use `break` to tell the JavaScript engine to stop executing the `switch`
-statement as soon as it finds a match. You will often see switch statements
-where `break` is used in every case as a way to ensure there is no unexpected
-behavior from multiple cases executing.
+continuing to look at case statements once it finds a match. If we didn't have
+the `break` keyword inside the switch statement, it would get to a match at
+`case 15`, continue on through to `case 19` and set `isTeenager` to true, as
+desired. The code would then continue, however, executing the `default` case and
+resetting `isTeenager` to false. To keep that from happening, we can use `break`
+to tell the JavaScript engine to stop executing the `switch` statement once it
+has found a match. You will often see switch statements where `break` is used in
+every case as a way to ensure there is no unexpected behavior from multiple
+cases executing.
 
 **Advanced:** Sometimes we _want_ to potentially match multiple cases, and we
 will need to leave out `break` in order to do this. We can refactor the `if...else
