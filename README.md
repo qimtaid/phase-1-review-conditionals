@@ -112,7 +112,7 @@ statements. It plays a role in conditional statements, loops, and functions.
 // => 20
 ```
 
-Block statements return the value of the *last evaluated expression* inside the
+Block statements return the value of the _last evaluated expression_ inside the
 curly braces. Remember, the variable declarations are _not_ expressions, so the
 value of `5 * 5 - 5` is returned.
 
@@ -183,8 +183,8 @@ Boolean({ firstName: 'Brendan', lastName: 'Eich' });
 
 ## Review How to Use Conditional Statements
 
-JavaScript includes three structures for implementing code conditionally: *if
-statements*, *switch statements*, and *ternary expressions*.
+JavaScript includes three structures for implementing code conditionally: _if
+statements_, _switch statements_, and _ternary expressions_.
 
 ### `if` statement
 
@@ -294,7 +294,7 @@ conditional code returns `true`, return `true`, and when the conditional code
 returns `false`, return `false`." Sounds a bit redundant, doesn't it? When the
 return values are `true` and `false` as in the example above, you actually don't
 need to use a ternary — or an `if...else` — at all! This is because
-***the conditional is an expression as well***. The return value of `age >= 18`
+**the conditional is an expression as well**. The return value of `age >= 18`
 is a _Boolean value_ (`true` or `false`), so it can be assigned directly to our
 `isAdult` variable:
 
@@ -531,11 +531,11 @@ ensure the correct flow.
 #### `default`
 
 The `default` keyword is similar to the `else` clause in an `if...else`
-construction. It specifies a set of statements to run after all of the `switch`
-statement's `case`s have been checked. However, it is different from an `else`
-in that **the only time it does _not_ run is if the engine hits a `break` in one
-of the `case` statements**. If you only want one code block in your `switch`
-statement to execute, you should always include the `break` keyword.
+construction. It specifies a set of statements to run after all of the
+`switch` statement's `case`s have been checked. However, it is different from
+an `else` in that it will run unless the engine hits a `break` in one of the
+`case` statements. If you only want one code block in your `switch` statement
+ to execute, you should always include the `break` keyword.
 
 #### `break`
 
@@ -590,7 +590,7 @@ _comparison expressions_ that return `true` or `false`. Therefore, if a
 comparison returns `true`, its statements will be run. Because we did not include
 any `break` statements, once _one_ case statement matches, all subsequent
 statements will execute. This is what we want here: if `age` is greater than 21,
-it's also greater than 18 and 16, so we want *all* the assignments to be made.
+it's also greater than 18 and 16, so we want _all_ the assignments to be made.
 
 If we set `age` to `20` in the above example, the first `case`, `age >= 21`,
 returns `false` and the assignment of `canDrink` never happens. The engine then
